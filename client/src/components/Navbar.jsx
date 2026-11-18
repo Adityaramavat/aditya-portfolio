@@ -6,7 +6,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    ["Home", "Home.jsx"],
+    ["Home", "#home"],
     ["About", "#about"],
     ["Skills", "#skills"],
     ["Projects", "#projects"],

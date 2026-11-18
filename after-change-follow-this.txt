@@ -1,0 +1,110 @@
+Buddy! ❤️ This is one of the most important things to learn after deploying a website.
+
+The good news is that **you don't need to deploy your website manually every time you make a change.** Because we connected GitHub with Vercel, the deployment process is automatic.
+
+Whenever you update your project and push the changes to GitHub, Vercel automatically rebuilds and updates your live website.
+
+# **Your future website update workflow**
+
+## **The 6-step workflow**
+
+1. **Make changes in VS Code**
+
+   Example: Change your profile photo, add a certificate, update skills or edit project details.
+2. **Save your files**
+
+   Press `Ctrl + S`.
+3. **Test your project locally**
+
+   Open VS Code terminal and run:
+   ```
+   npm run build
+   ```
+   Run this from `D:\my-portfolio\client`.
+4. **Open your project root folder**
+
+   Go to:
+   ```
+   D:\my-portfolio
+   ```
+5. **Push changes to GitHub**
+
+   Run these three commands:
+   ```
+   git add .
+   git commit -m "Update portfolio"
+   git push
+   ```
+6. **Vercel automatically deploys**
+
+   Vercel detects your new GitHub commit, builds the project and publishes the updated website.
+
+Automatic deployment
+
+# **Example 1: You want to change your profile photo**
+
+1. Open VS Code.
+2. Replace your existing profile photo in the appropriate assets folder.
+3. Keep the same filename and extension if you want to avoid changing the code.
+4. Run `npm run build`.
+5. Push your changes to GitHub using the three commands above.
+6. Wait for Vercel to show `Ready`.
+
+Your live portfolio will display the new photo.
+
+# **Example 2: You want to add a new certificate**
+
+1. Add your certificate image or PDF to the appropriate assets folder.
+2. Update your Certifications component with its details.
+3. Save the files.
+4. Run the production build.
+5. Push changes to GitHub.
+6. Wait for Vercel deployment.
+
+Your new certificate will appear on the live website.
+
+# **Important: Keep these rules in mind**
+
+| Situation                    | What to do                          |
+| ---------------------------- | ----------------------------------- |
+| Change text or image         | Git push                            |
+| Add certificate              | Git push                            |
+| Add a new project            | Git push                            |
+| Change CSS/design            | Git push                            |
+| Install a new npm package    | Update package files and Git push   |
+| Change environment variables | Update Vercel settings and redeploy |
+| Build error                  | Fix locally before pushing          |
+
+## **Your reusable commands**
+
+**Save these three commands for every future update:**
+
+```
+git add .
+git commit -m "Update portfolio"
+git push
+```
+
+&#x20;Copy all commands
+
+## **One professional tip**
+
+After Vercel shows `Ready`, open your live website and press:
+
+- `Ctrl + Shift + R` to hard-refresh the browser.
+- Check the updated content.
+- If the deployment shows `Error`, open its Build Logs and fix the error before considering the update complete.
+
+**Remember this simple formula:**
+
+**VS Code**
+
+**Local Build Test**
+
+**GitHub Push**
+
+**Automatic Vercel Deployment**
+
+# **Updated Live Website! 🚀**
+
+That's it, buddy! You now know how to maintain and update your deployed portfolio without repeating the initial hosting process. ❤️

@@ -79,7 +79,7 @@ function Home() {
         <div className="home-image">
           <div className="image-glow">
             <img
-              src="/images/IMG_3683.JPG"
+              src="/images/aditya.jpeg"
               alt="Aditya Ramavat"
             />
           </div>
